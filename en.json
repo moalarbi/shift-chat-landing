@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "demo": "Demo",
+    "login": "Login",
+    "watchDemo": "Watch Demo"
+  },
+  "cta": {
+    "startNow": "Start Now",
+    "watchDemo": "Watch Demo"
+  },
+  "hero": {
+    "badge": "WhatsApp Team Inbox + AI",
+    "title": "Turn Your WhatsApp Into a 24/7 AI-Powered Sales Engine",
+    "subtitle": "Team inbox + conversation routing + analytics + AI that replies and qualifies leads — in one experience.",
+    "trustTitle": "Built for any startup",
+    "mockupHint": "Place your dashboard screenshot here later"
+  },
+  "pain": {
+    "title": "Before Shift Chat… WhatsApp drains your time",
+    "desc": "Scattered chats, slow replies, poor visibility, and no sales system.",
+    "c1": { "t": "Messages get lost", "d": "Leads come in… but you can't track ownership or outcomes." },
+    "c2": { "t": "No team visibility", "d": "No routing, roles, or performance tracking." },
+    "c3": { "t": "Slow responses", "d": "Slow replies = lost revenue. Customers want instant answers." }
+  },
+  "ai": {
+    "title": "AI that doesn't just reply… it sells",
+    "desc": "Shift Chat adds an AI layer on top of WhatsApp: auto replies, lead qualification, smart suggestions for agents, and conversion-ready chat flows.",
+    "li1": "AI auto-replies for repetitive questions",
+    "li2": "Lead qualification before the agent jumps in",
+    "li3": "Smart suggested replies for agents",
+    "li4": "Flow builder to increase conversions",
+    "li5": "Conversation memory for higher accuracy",
+    "node1": "Deep Analysis",
+    "node2": "Auto Qualification",
+    "node3": "Smart Replies",
+    "node4": "Higher Accuracy"
+  },
+  "demo": {
+    "title": "Watch the Demo",
+    "desc": "Add your direct video link later. It will play inside the page.",
+    "play": "Play Demo",
+    "note": "Paste your video URL into the iframe src later"
+  },
+  "features": {
+    "title": "Core Features",
+    "desc": "Everything you need to turn WhatsApp into an organized business system.",
+    "f1": { "t": "Team Inbox", "d": "A unified inbox for the whole team." },
+    "f2": { "t": "Flow Builder", "d": "Conversation flows built to convert." },
+    "f3": { "t": "Analytics", "d": "Track speed, ownership, and outcomes per agent." },
+    "f4": { "t": "Roles & Permissions", "d": "Admin and Agent roles with full control." },
+    "f5": { "t": "Fast Setup", "d": "Go live quickly with a clean setup." },
+    "f6": { "t": "AI (Yearly Only)", "d": "Advanced AI replies & qualification." }
+  },
+  "stats": {
+    "s1": "Managed Chats",
+    "s2": "Faster Replies %",
+    "s3": "Startups",
+    "s4": "Hours Running",
+    "note": "*Placeholders — update later."
+  },
+  "ba": {
+    "title": "Before / After Shift Chat",
+    "desc": "A clear difference in structure, speed, and conversion.",
+    "before": "Before",
+    "after": "After",
+    "mediaHint": "Add before/after images later",
+    "beforeTitle": "Before Shift Chat",
+    "afterTitle": "After Shift Chat",
+    "b1": "Scattered conversations",
+    "b2": "No routing or roles",
+    "b3": "Hard to monitor performance",
+    "b4": "Slow replies",
+    "a1": "Automatic conversation routing",
+    "a2": "Admin/Agent roles with control",
+    "a3": "Clear analytics & KPIs",
+    "a4": "AI replies & qualification (Yearly only)"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "desc": "Choose a plan — we'll finalize everything on WhatsApp.",
+    "mo": "/ month",
+    "six": "/ 6 months",
+    "yr": "/ year",
+    "best": "Best Value",
+    "p1": { "name": "Starter", "price": "SAR 20" },
+    "p2": { "name": "Growth", "price": "SAR 100" },
+    "p3": { "name": "Pro AI", "price": "SAR 150" },
+    "common1": "Team Inbox",
+    "common2": "Flow Builder",
+    "common3": "Analytics",
+    "common4": "Add Agents",
+    "common5": "Admin/Agent Roles",
+    "aiOnly": "Includes AI + Account Manager (Yearly only)",
+    "setupTitle": "One-time Setup Fee: SAR 400",
+    "setupDesc": "Includes Meta Business setup + account/number verification + system configuration."
+  },
+  "trial": {
+    "title": "1-Week Demo Trial",
+    "desc": "Trial is available only if your Meta Business is already prepared — so we can start instantly.",
+    "cta": "Request Trial on WhatsApp"
+  },
+  "faq": {
+    "title": "FAQ",
+    "desc": "Quick answers before you start.",
+    "q1": "Can I add multiple agents?",
+    "a1": "Yes, you can add multiple agents and manage permissions from the admin account.",
+    "q2": "How do subscriptions and payments work?",
+    "a2": "Everything happens on WhatsApp: quick chat + meeting booking + setup + activation.",
+    "q3": "What are the trial requirements?",
+    "a3": "A ready Meta Business for fast verification and setup.",
+    "q4": "Where are login links?",
+    "a4": "Click Login, then choose Admin or Agent."
+  },
+  "final": {
+    "title": "Ready to turn WhatsApp into a smart sales engine?",
+    "desc": "Start now — we'll guide you to the next step in minutes."
+  },
+  "login": {
+    "title": "Login",
+    "desc": "Choose your account type",
+    "admin": "Admin Login",
+    "agent": "Agent Login",
+    "hint": "Subscribers have admin access and can create agent accounts."
+  },
+  "footer": {
+    "note": "© All rights reserved"
+  }
+}

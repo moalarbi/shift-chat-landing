@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shift Chat | شيفت شات</title>
+
+  <link rel="icon" type="image/svg+xml" href="./assets/img/logo.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Shift Chat | شيفت شات" />
+  <meta property="og:description" content="حوّل واتساب مشروعك إلى نظام مبيعات ذكي يعمل 24/7 — فريق + تقارير + ذكاء اصطناعي." />
+  <meta property="og:image" content="./assets/img/og/og-image-1200x630.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ar_SA" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shift Chat | شيفت شات" />
+  <meta name="twitter:description" content="حوّل واتساب مشروعك إلى نظام مبيعات ذكي يعمل 24/7 — فريق + تقارير + ذكاء اصطناعي." />
+  <meta name="twitter:image" content="./assets/img/og/og-image-1200x630.jpg" />
+
+  <!-- SEO -->
+  <meta name="description" content="Shift Chat: نظام واتساب مؤسسي + فريق + تقارير + ذكاء اصطناعي. ابدأ الآن واطلب الديمو عبر واتساب." />
+
+  <!-- IBM Plex Sans Arabic from Google Fonts (no local files needed) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Background Effects -->
+  <div class="bg">
+    <div class="bg__rays"></div>
+    <div class="bg__glow bg__glow--a"></div>
+    <div class="bg__glow bg__glow--b"></div>
+    <div class="bg__grid"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Shift Chat">
+        <svg class="brand__logo" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="28" height="28" rx="8" fill="url(#lg)"/>
+          <path d="M7 10.5C7 9.4 7.9 8.5 9 8.5h10c1.1 0 2 .9 2 2v5c0 1.1-.9 2-2 2h-2l-3 2.5V17.5H9c-1.1 0-2-.9-2-2v-5z" fill="white" fill-opacity=".9"/>
+          <defs><linearGradient id="lg" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#2563EB"/></linearGradient></defs>
+        </svg>
+        <span class="brand__name">SHIFT CHAT</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav__link" href="#features" data-i18n="nav.features">المميزات</a>
+        <a class="nav__link" href="#pricing" data-i18n="nav.pricing">الباقات</a>
+        <a class="nav__link" href="#faq" data-i18n="nav.faq">الأسئلة</a>
+        <a class="nav__link" href="#demo" data-i18n="nav.demo">الديمو</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="btn btn--ghost" id="btnLang" type="button" aria-label="Toggle language">
+          <span class="btn__icon">🌐</span>
+          <span id="langLabel">EN</span>
+        </button>
+
+        <button class="btn btn--ghost" id="btnLogin" type="button">
+          <span class="btn__icon">🔒</span>
+          <span data-i18n="nav.login">تسجيل الدخول</span>
+        </button>
+
+        <a class="btn btn--primary" href="#demo" data-i18n="nav.watchDemo">شاهد الديمو</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" aria-hidden="true">
+      <a class="mobileNav__link" href="#features" data-i18n="nav.features">المميزات</a>
+      <a class="mobileNav__link" href="#pricing" data-i18n="nav.pricing">الباقات</a>
+      <a class="mobileNav__link" href="#faq" data-i18n="nav.faq">الأسئلة</a>
+      <a class="mobileNav__link" href="#demo" data-i18n="nav.demo">الديمو</a>
+      <button class="btn btn--ghost mobileNav__btn" id="btnLogin2" type="button" data-i18n="nav.login">تسجيل الدخول</button>
+      <a class="btn btn--primary mobileNav__btn" href="#demo" data-i18n="nav.watchDemo">شاهد الديمو</a>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero__content reveal">
+        <p class="badge" data-i18n="hero.badge">واتساب مؤسسي + ذكاء اصطناعي</p>
+
+        <h1 class="hero__title" data-i18n="hero.title">
+          حوّل واتساب مشروعك إلى نظام مبيعات ذكي يعمل 24/7
+        </h1>
+
+        <p class="hero__subtitle" data-i18n="hero.subtitle">
+          صندوق وارد للفريق + توزيع محادثات + تقارير + ذكاء اصطناعي يرد ويؤهل العملاء — في تجربة واحدة.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary btn--xl" id="ctaWhatsAppTop" href="#">
+            <span data-i18n="cta.startNow">ابدأ الآن</span>
+            <span class="btn__arrow">↗</span>
+          </a>
+          <a class="btn btn--glass btn--xl" href="#demo">
+            <span data-i18n="cta.watchDemo">شاهد الديمو</span>
+          </a>
+        </div>
+
+        <div class="hero__trust">
+          <p class="hero__trustTitle" data-i18n="hero.trustTitle">مناسب لأي مشروع ناشئ</p>
+          <div class="logoStrip">
+            <span class="logoStrip__item">متجر إلكتروني</span>
+            <span class="logoStrip__item">عيادة</span>
+            <span class="logoStrip__item">خدمات</span>
+            <span class="logoStrip__item">تعليم</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal">
+        <div class="mockup">
+          <div class="mockup__top">
+            <span class="dot dot--r"></span>
+            <span class="dot dot--y"></span>
+            <span class="dot dot--g"></span>
+            <span class="mockup__url">shift-chat.com/dashboard</span>
+          </div>
+          <div class="mockup__body">
+            <div class="chat__sidebar">
+              <div class="chat__sidebarHead">المحادثات</div>
+              <div class="chat__item chat__item--active">
+                <div class="chat__avatar">أ</div>
+                <div class="chat__info">
+                  <div class="chat__name">أحمد محمد</div>
+                  <div class="chat__preview">استفسار عن الباقة...</div>
+                </div>
+                <div class="chat__badge">3</div>
+              </div>
+              <div class="chat__item">
+                <div class="chat__avatar chat__avatar--b">س</div>
+                <div class="chat__info">
+                  <div class="chat__name">سارة علي</div>
+                  <div class="chat__preview">شكراً جزيلاً 🙏</div>
+                </div>
+              </div>
+              <div class="chat__item">
+                <div class="chat__avatar chat__avatar--c">م</div>
+                <div class="chat__info">
+                  <div class="chat__name">محمد العمري</div>
+                  <div class="chat__preview">متى يبدأ الاشتراك؟</div>
+                </div>
+                <div class="chat__badge">1</div>
+              </div>
+            </div>
+            <div class="chat__main">
+              <div class="chat__bubble chat__bubble--in">
+                <span>مرحباً، أريد الاستفسار عن باقة Pro AI</span>
+                <span class="chat__time">10:32</span>
+              </div>
+              <div class="chat__bubble chat__bubble--ai">
+                <span class="chat__aiTag">🤖 AI</span>
+                <span>أهلاً! باقة Pro AI تشمل كل مميزات النظام + ذكاء اصطناعي متقدم بسعر 150 ريال سنوياً.</span>
+                <span class="chat__time">10:32</span>
+              </div>
+              <div class="chat__bubble chat__bubble--out">
+                <span>ممتاز! كيف أبدأ؟</span>
+                <span class="chat__time">10:33</span>
+              </div>
+            </div>
+          </div>
+          <div class="mockup__hint" data-i18n="hero.mockupHint">ضع هنا صورة واجهة النظام لاحقًا</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAIN -->
+    <section class="section container" id="pain">
+      <div class="sectionHead reveal">
+        <h2 class="sectionTitle" data-i18n="pain.title">قبل شيفت شات… واتساب يستهلك وقتك</h2>
+        <p class="sectionDesc" data-i18n="pain.desc">
+          فوضى رسائل، ردود متأخرة، صعوبة متابعة الموظفين، ولا يوجد نظام واضح للمبيعات.
+        </p>
+      </div>
+
+      <div class="cards3">
+        <div class="card reveal">
+          <div class="card__icon">📩</div>
+          <h3 class="card__title" data-i18n="pain.c1.t">رسائل تضيع</h3>
+          <p class="card__text" data-i18n="pain.c1.d">العميل يرسل… ولا تعرف من رد أو أين انتهت المحادثة.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">👥</div>
+          <h3 class="card__title" data-i18n="pain.c2.t">فريق بلا شفافية</h3>
+          <p class="card__text" data-i18n="pain.c2.d">لا يوجد توزيع محادثات أو صلاحيات أو تتبع أداء.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">⏱️</div>
+          <h3 class="card__title" data-i18n="pain.c3.t">ردود بطيئة</h3>
+          <p class="card__text" data-i18n="pain.c3.d">العميل يريد إجابة الآن… والوقت الضائع يعني مبيعات ضائعة.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI POWER -->
+    <section class="section container" id="ai">
+      <div class="split">
+        <div class="split__left reveal">
+          <h2 class="sectionTitle" data-i18n="ai.title">ذكاء اصطناعي لا يرد فقط… بل يبيع</h2>
+          <p class="sectionDesc" data-i18n="ai.desc">
+            شيفت شات يضيف طبقة AI على واتساب: ردود تلقائية، تأهيل العملاء، اقتراحات ذكية للموظفين، وسيناريوهات محادثة جاهزة.
+          </p>
+          <ul class="list">
+            <li data-i18n="ai.li1">ردود AI تلقائية على الأسئلة المتكررة</li>
+            <li data-i18n="ai.li2">تأهيل العميل وتحديد الاحتياج قبل الموظف</li>
+            <li data-i18n="ai.li3">اقتراح ردود جاهزة للموظف (Smart Replies)</li>
+            <li data-i18n="ai.li4">بناء تدفقات محادثة (Flow Builder) لرفع التحويل</li>
+            <li data-i18n="ai.li5">ذاكرة سياقية للمحادثة لتحسين الدقة</li>
+          </ul>
+        </div>
+        <div class="split__right reveal">
+          <div class="aiNodes">
+            <div class="aiNodes__core">AI</div>
+            <div class="aiNodes__node" style="top:18%; left:10%;" data-i18n="ai.node1">تحليل عميق</div>
+            <div class="aiNodes__node" style="top:22%; right:6%;" data-i18n="ai.node2">تأهيل تلقائي</div>
+            <div class="aiNodes__node" style="bottom:22%; left:8%;" data-i18n="ai.node3">ردود ذكية</div>
+            <div class="aiNodes__node" style="bottom:18%; right:10%;" data-i18n="ai.node4">دقة أعلى</div>
+            <svg class="aiNodes__lines" viewBox="0 0 400 380" preserveAspectRatio="xMidYMid meet">
+              <line x1="200" y1="190" x2="60" y2="80" stroke="rgba(124,58,237,0.4)" stroke-width="1.5" stroke-dasharray="4"/>
+              <line x1="200" y1="190" x2="340" y2="90" stroke="rgba(37,99,235,0.4)" stroke-width="1.5" stroke-dasharray="4"/>
+              <line x1="200" y1="190" x2="55" y2="300" stroke="rgba(124,58,237,0.4)" stroke-width="1.5" stroke-dasharray="4"/>
+              <line x1="200" y1="190" x2="345" y2="300" stroke="rgba(37,99,235,0.4)" stroke-width="1.5" stroke-dasharray="4"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEMO -->
+    <section class="section container" id="demo">
+      <div class="sectionHead reveal">
+        <h2 class="sectionTitle" data-i18n="demo.title">شاهد الديمو</h2>
+        <p class="sectionDesc" data-i18n="demo.desc">ضع رابط الفيديو المباشر لاحقًا. سيتم تشغيله داخل الموقع.</p>
+      </div>
+
+      <div class="videoFrame reveal">
+        <iframe id="demoVideo" title="Shift Chat Demo" src=""
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <div class="videoOverlay" id="videoOverlay">
+          <div class="videoOverlay__inner">
+            <div class="videoOverlay__icon">▶</div>
+            <button class="btn btn--primary btn--xl" type="button" id="btnPlayPlaceholder">
+              <span data-i18n="demo.play">تشغيل الديمو</span>
+            </button>
+            <p class="muted" data-i18n="demo.note">ضع رابط الفيديو داخل الكود لاحقًا (src)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section container" id="features">
+      <div class="sectionHead reveal">
+        <h2 class="sectionTitle" data-i18n="features.title">المميزات الأساسية</h2>
+        <p class="sectionDesc" data-i18n="features.desc">كل شيء تحتاجه لتحويل واتساب إلى نظام مؤسسي منظم.</p>
+      </div>
+
+      <div class="cardsGrid">
+        <div class="card reveal">
+          <div class="card__icon">🧭</div>
+          <h3 class="card__title" data-i18n="features.f1.t">Team Inbox</h3>
+          <p class="card__text" data-i18n="features.f1.d">صندوق وارد موحد للفريق بدل الفوضى.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">🧩</div>
+          <h3 class="card__title" data-i18n="features.f2.t">Flow Builder</h3>
+          <p class="card__text" data-i18n="features.f2.d">تدفقات محادثة جاهزة لتحويل العملاء.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">📊</div>
+          <h3 class="card__title" data-i18n="features.f3.t">تقارير الأداء</h3>
+          <p class="card__text" data-i18n="features.f3.d">تابع الردود والسرعة والإغلاق لكل موظف.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">🧑‍💼</div>
+          <h3 class="card__title" data-i18n="features.f4.t">صلاحيات الموظفين</h3>
+          <p class="card__text" data-i18n="features.f4.d">Admin و Agent وإدارة كاملة للفريق.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">⚡</div>
+          <h3 class="card__title" data-i18n="features.f5.t">تشغيل سريع</h3>
+          <p class="card__text" data-i18n="features.f5.d">إعداد وتجهيز في وقت قياسي.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">🤖</div>
+          <h3 class="card__title" data-i18n="features.f6.t">AI (سنوي فقط)</h3>
+          <p class="card__text" data-i18n="features.f6.d">ذكاء اصطناعي متقدم للرد والتأهيل.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section container" id="stats">
+      <div class="stats reveal">
+        <div class="stat">
+          <div class="stat__num" data-count="12000">0</div>
+          <div class="stat__label" data-i18n="stats.s1">محادثة مُدارة</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" data-count="97">0</div>
+          <div class="stat__label" data-i18n="stats.s2">تحسن سرعة الرد %</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" data-count="35">0</div>
+          <div class="stat__label" data-i18n="stats.s3">مشروع ناشئ</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" data-count="24">0</div>
+          <div class="stat__label" data-i18n="stats.s4">ساعة تشغيل</div>
+        </div>
+      </div>
+      <p class="muted center reveal" data-i18n="stats.note" style="margin-top:12px">*الأرقام Placeholder — عدلها لاحقًا.</p>
+    </section>
+
+    <!-- BEFORE / AFTER -->
+    <section class="section container" id="beforeAfter">
+      <div class="sectionHead reveal">
+        <h2 class="sectionTitle" data-i18n="ba.title">قبل / بعد شيفت شات</h2>
+        <p class="sectionDesc" data-i18n="ba.desc">فرق واضح في التنظيم والسرعة والتحويل.</p>
+      </div>
+
+      <div class="ba reveal">
+        <div class="ba__tabs">
+          <button class="tab tab--active" data-tab="before" type="button" data-i18n="ba.before">قبل</button>
+          <button class="tab" data-tab="after" type="button" data-i18n="ba.after">بعد</button>
+        </div>
+        <div class="ba__panel" id="baPanel">
+          <div class="ba__media">
+            <div class="ba__placeholder" id="baPlaceholder">
+              <div class="ba__placeholderInner">
+                <div class="ba__placeholderIcon" id="baIcon">😵‍💫</div>
+                <div id="baSubtitle">فوضى وضياع</div>
+              </div>
+            </div>
+            <div class="ba__mediaHint" data-i18n="ba.mediaHint">ضع صور قبل/بعد لاحقًا</div>
+          </div>
+          <div class="ba__points">
+            <h3 id="baTitle" data-i18n="ba.beforeTitle">قبل شيفت شات</h3>
+            <ul id="baList" class="list">
+              <li data-i18n="ba.b1">محادثات متفرقة</li>
+              <li data-i18n="ba.b2">لا يوجد توزيع أو صلاحيات</li>
+              <li data-i18n="ba.b3">صعوبة المتابعة</li>
+              <li data-i18n="ba.b4">ردود متأخرة</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section container" id="pricing">
+      <div class="sectionHead reveal">
+        <h2 class="sectionTitle" data-i18n="pricing.title">الباقات والأسعار</h2>
+        <p class="sectionDesc" data-i18n="pricing.desc">اختر الخطة المناسبة، وسنُكمل كل شيء عبر واتساب.</p>
+      </div>
+
+      <div class="pricingGrid">
+        <div class="priceCard reveal">
+          <div class="priceCard__head">
+            <h3 data-i18n="pricing.p1.name">Starter</h3>
+            <p class="priceCard__price"><span data-i18n="pricing.p1.price">20 ريال</span> <span class="muted" data-i18n="pricing.mo">/ شهريًا</span></p>
+          </div>
+          <ul class="priceCard__list">
+            <li data-i18n="pricing.common1">Team Inbox</li>
+            <li data-i18n="pricing.common2">Flow Builder</li>
+            <li data-i18n="pricing.common3">تقارير الأداء</li>
+            <li data-i18n="pricing.common4">إضافة موظفين</li>
+            <li data-i18n="pricing.common5">صلاحيات Admin/Agent</li>
+          </ul>
+          <a class="btn btn--glass btn--full" href="#" data-wa="pricing_starter" data-i18n="cta.startNow">ابدأ الآن</a>
+        </div>
+
+        <div class="priceCard reveal">
+          <div class="priceCard__head">
+            <h3 data-i18n="pricing.p2.name">Growth</h3>
+            <p class="priceCard__price"><span data-i18n="pricing.p2.price">100 ريال</span> <span class="muted" data-i18n="pricing.six">/ 6 أشهر</span></p>
+          </div>
+          <ul class="priceCard__list">
+            <li data-i18n="pricing.common1">Team Inbox</li>
+            <li data-i18n="pricing.common2">Flow Builder</li>
+            <li data-i18n="pricing.common3">تقارير الأداء</li>
+            <li data-i18n="pricing.common4">إضافة موظفين</li>
+            <li data-i18n="pricing.common5">صلاحيات Admin/Agent</li>
+          </ul>
+          <a class="btn btn--glass btn--full" href="#" data-wa="pricing_growth" data-i18n="cta.startNow">ابدأ الآن</a>
+        </div>
+
+        <div class="priceCard priceCard--highlight reveal">
+          <div class="priceCard__badge" data-i18n="pricing.best">الأفضل</div>
+          <div class="priceCard__head">
+            <h3 data-i18n="pricing.p3.name">Pro AI</h3>
+            <p class="priceCard__price"><span data-i18n="pricing.p3.price">150 ريال</span> <span class="muted" data-i18n="pricing.yr">/ سنويًا</span></p>
+          </div>
+          <ul class="priceCard__list">
+            <li data-i18n="pricing.common1">Team Inbox</li>
+            <li data-i18n="pricing.common2">Flow Builder</li>
+            <li data-i18n="pricing.common3">تقارير الأداء</li>
+            <li data-i18n="pricing.common4">إضافة موظفين</li>
+            <li data-i18n="pricing.common5">صلاحيات Admin/Agent</li>
+            <li class="emph" data-i18n="pricing.aiOnly">يشمل AI + مدير حساب (سنوي فقط)</li>
+          </ul>
+          <a class="btn btn--primary btn--full" href="#" data-wa="pricing_pro_ai" data-i18n="cta.startNow">ابدأ الآن</a>
+        </div>
+      </div>
+
+      <div class="setupFee reveal">
+        <div class="setupFee__box">
+          <h3 data-i18n="pricing.setupTitle">رسوم تأسيس لمرة واحدة: 400 ريال</h3>
+          <p class="muted" data-i18n="pricing.setupDesc">
+            تشمل فتح حساب Meta Business + توثيق الحساب والرقم + إعداد النظام وتجهيزه للاستخدام.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRIAL -->
+    <section class="section container" id="trial">
+      <div class="trial reveal">
+        <div>
+          <h2 class="sectionTitle" data-i18n="trial.title">أسبوع تجربة (Demo)</h2>
+          <p class="sectionDesc" data-i18n="trial.desc">
+            التجربة متاحة فقط لمن لديهم Meta Business مُجهز، حتى نقدر نبدأ مباشرة.
+          </p>
+        </div>
+        <a class="btn btn--primary btn--xl" id="ctaTrial" href="#">
+          <span data-i18n="trial.cta">اطلب التجربة عبر واتساب</span>
+          <span class="btn__arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section container" id="faq">
+      <div class="sectionHead reveal">
+        <h2 class="sectionTitle" data-i18n="faq.title">الأسئلة الشائعة</h2>
+        <p class="sectionDesc" data-i18n="faq.desc">إجابات سريعة قبل ما تبدأ.</p>
+      </div>
+
+      <div class="faq reveal">
+        <details open>
+          <summary data-i18n="faq.q1">هل يمكنني إضافة أكثر من موظف؟</summary>
+          <p data-i18n="faq.a1">نعم، يمكنك إضافة موظفين متعددين وإدارة الصلاحيات من حساب الأدمن.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq.q2">كيف يتم الاشتراك والدفع؟</summary>
+          <p data-i18n="faq.a2">كل شيء يتم عبر واتساب: نقاش سريع + حجز اجتماع + تجهيز الحساب ثم تفعيل الاشتراك.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq.q3">ما شروط التجربة الأسبوعية؟</summary>
+          <p data-i18n="faq.a3">وجود Meta Business مُجهز لتوثيق الرقم وربط النظام بسرعة.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq.q4">أين روابط تسجيل الدخول؟</summary>
+          <p data-i18n="faq.a4">تسجيل الدخول يتم من زر "تسجيل الدخول" ثم اختيار Admin أو Employee.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section container" id="finalCta">
+      <div class="finalCta reveal">
+        <h2 class="finalCta__title" data-i18n="final.title">جاهز تحول واتسابك إلى آلة مبيعات ذكية؟</h2>
+        <p class="finalCta__desc" data-i18n="final.desc">اضغط وابدأ… وخلال دقائق نرتب لك الخطوة القادمة.</p>
+        <div class="finalCta__actions">
+          <a class="btn btn--primary btn--xl" id="ctaWhatsAppBottom" href="#">
+            <span data-i18n="cta.startNow">ابدأ الآن</span>
+            <span class="btn__arrow">↗</span>
+          </a>
+          <button class="btn btn--glass btn--xl" type="button" id="btnLogin3">
+            <span data-i18n="nav.login">تسجيل الدخول</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky CTA -->
+  <div class="stickyCta" id="stickyCta">
+    <a class="btn btn--primary btn--full" id="ctaStickyWhatsApp" href="#">
+      <span data-i18n="cta.startNow">ابدأ الآن</span> <span class="btn__arrow">↗</span>
+    </a>
+    <button class="btn btn--ghost btn--full" type="button" id="btnLoginSticky" data-i18n="nav.login">تسجيل الدخول</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="brand brand--footer">
+          <svg class="brand__logo" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="28" rx="8" fill="url(#lg2)"/>
+            <path d="M7 10.5C7 9.4 7.9 8.5 9 8.5h10c1.1 0 2 .9 2 2v5c0 1.1-.9 2-2 2h-2l-3 2.5V17.5H9c-1.1 0-2-.9-2-2v-5z" fill="white" fill-opacity=".9"/>
+            <defs><linearGradient id="lg2" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#2563EB"/></linearGradient></defs>
+          </svg>
+          <span class="brand__name">SHIFT CHAT</span>
+        </div>
+        <p class="muted" data-i18n="footer.note">© جميع الحقوق محفوظة</p>
+      </div>
+      <div class="footer__right">
+        <a class="footer__link" href="#features" data-i18n="nav.features">المميزات</a>
+        <a class="footer__link" href="#pricing" data-i18n="nav.pricing">الباقات</a>
+        <a class="footer__link" href="#faq" data-i18n="nav.faq">الأسئلة</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Login Modal -->
+  <div class="modal" id="loginModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal__backdrop" data-close="true"></div>
+    <div class="modal__panel">
+      <div class="modal__head">
+        <h3 class="modal__title" data-i18n="login.title">تسجيل الدخول</h3>
+        <button class="modal__close" type="button" aria-label="Close" data-close="true">✕</button>
+      </div>
+      <p class="muted" data-i18n="login.desc">اختر نوع الحساب للدخول</p>
+      <div class="modal__actions">
+        <a class="btn btn--primary btn--full" href="https://shift-chat.com/user" target="_blank" rel="noopener">
+          <span data-i18n="login.admin">دخول الإدارة (Admin)</span>
+          <span class="btn__arrow">↗</span>
+        </a>
+        <a class="btn btn--glass btn--full" href="https://shift-chat.com/agent/" target="_blank" rel="noopener">
+          <span data-i18n="login.agent">دخول الموظف (Agent)</span>
+          <span class="btn__arrow">↗</span>
+        </a>
+      </div>
+      <div class="modal__hint">
+        <p class="muted" data-i18n="login.hint">المشترك يمتلك صلاحيات الأدمن ويمكنه إنشاء حسابات موظفين.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
